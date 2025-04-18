@@ -29,4 +29,15 @@ class TaskController extends Controller
 
         return response()->json($task, 201);
     }
+
+    public function getStatus(Request $request)
+    {
+        $task = Task::query()->find($request->taskId);
+
+        if (!$task) {
+            return response(null, 404);
+        }
+
+        return response()->json($task, 200);
+    }
 }

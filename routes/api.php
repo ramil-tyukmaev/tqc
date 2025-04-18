@@ -6,4 +6,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware([ApiKeyCheck::class])->group(function () {
     Route::post('/v1/tasks', [TaskController::class, 'create']);
+    Route::get('/v1/tasks/{taskId}', [TaskController::class, 'getStatus']);
 });
