@@ -1,7 +1,6 @@
 # talks quality checker
 
-###Развернуть проект
-``make init``
+Чтобы развернуть проект запустите `make init` и заполните в .env TRANSCRIPTION_API_KEY
 
 ###Поднять контейнеры
 ``docker compose up -d``
