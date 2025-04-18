@@ -15,7 +15,7 @@
 "audioUrl": "http://localhost/test"
 }'`
 
-### Получить статус задания
+### Получить статус задания и результаты транскрибации и оценки
 `curl 'localhost/api/v1/tasks/1' --header 'X-API-KEY: qm64ak8mbb1q2gdao6i8kqezczv4k0lk'`
 
 ###Примечание
